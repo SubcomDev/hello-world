@@ -1,0 +1,23 @@
+{
+  "name": "subcomdev/hello-world",
+  "description": "A twill package",
+  "homepage": "https://github.com/subcomdev/hello-world",
+  "license": "MIT",
+  "require": {
+    "area17/twill": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "HelloWorld\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "HelloWorld\\HelloWorldServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
